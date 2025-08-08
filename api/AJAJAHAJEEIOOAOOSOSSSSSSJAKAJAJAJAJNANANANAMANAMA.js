@@ -31,7 +31,7 @@ export default async function handler(req, res) {
       const icon = rarityIcons[item.rarity] || item.rarity || "❓";
       const name = item.displayName || "Unknown";
       const gen = item.generation || "??";
-      list += `• ${icon}\n  👤 ${name} | 💰 Gen ${gen}\n`;
+      list += `• ${icon}\n  👤 ${name} | 💰 ${gen}\n`;
     }
 
     if (list) {
